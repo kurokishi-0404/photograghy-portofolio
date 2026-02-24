@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aperture & Grain | Photography</title>
+    <style>
+:root {
+    /* Deep ebony for backgrounds or text */
+    --coffee-bean: #1a1412; 
+    /* Rich, warm brown for secondary elements */
+    --mahogany: #3e2723;   
+    /* Classic "old book" paper color */
+    --parchment: #d7ccc8;  
+    /* Muted gold/tan for links and accents */
+    --vintage-gold: #a68b6d;
+    /* Soft shadow color */
+    --ink-black: #0a0a0a;
+}
+body {
+    background-color: var(--coffee-bean); /* Deep dark brown background */
+    color: var(--parchment); /* Light tan text */
+    font-family: 'Garamond', 'Georgia', serif;
+    margin: 0;
+}
+
+/* Navigation - elegant and understated */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 10%;
+    border-bottom: 1px solid rgba(215, 204, 200, 0.1);
+}
+
+.logo {
+    letter-spacing: 5px;
+    color: var(--vintage-gold);
+    text-transform: uppercase;
+}
+
+.menu a {
+    color: var(--parchment);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    transition: 0.4s ease;
+}
+
+.menu a:hover {
+    opacity: 1;
+    color: var(--vintage-gold);
+}
+
+/* Header - Dramatic typography */
+header {
+    text-align: center;
+    padding: 6rem 10% 4rem;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--parchment);
+    margin-bottom: 10px;
+}
+
+header p {
+    color: var(--vintage-gold);
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+/* The Gallery - "The Darkroom" Look */
+.gallery-container {
+    padding: 0 10% 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 60px; /* More space for an editorial feel */
+}
+
+.photo-item {
+    position: relative;
+    background: var(--ink-black); /* Padding looks like a film border */
+    padding: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.photo-item img {
+    width: 100%;
+    display: block;
+    /* This filter gives it that dark academia/underexposed look */
+    filter: sepia(20%) contrast(1.1) brightness(0.8);
+    transition: 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.photo-item:hover img {
+    filter: sepia(0%) contrast(1) brightness(1);
+    transform: scale(1.03);
+}
+
+.photo-caption {
+    margin-top: 15px;
+    font-family: 'Courier New', monospace; /* Typewriter font for captions */
+    font-size: 0.75rem;
+    color: var(--vintage-gold);
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: var(--ink-black);
+    color: var(--mahogany);
+    text-align: center;
+    padding: 4rem;
+    font-size: 0.8rem;
+    border-top: 1px solid rgba(215, 204, 200, 0.05);
+}
+
+       /* Mobile optimization */
+       @media (max-width: 768px) {
+           header h1 { font-size: 2rem; }
+           nav { flex-direction: column; gap: 20px; }
+       }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Aperture</div>
+        <ul class="menu">
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Captured Moments</h1>
+        <p>35mm Film Photography Portfolio</p>
+    </header>
+
+    <main class="gallery-container">
+        <div class="photo-item">
+            <img src="fxn 2026-01-30 1252297C6AE2A89621.JPG" alt="Floral Study">
+            <div class="photo-caption">ITM Football Fumble evidence, circa 2026</div>
+        </div>
+        <div class="photo-item">
+            <img src="fxn 2026-01-30 12491000BB017B367D.JPG" alt="Nature">
+            <div class="photo-caption">PEAK Unemployment example, circa 2026</div>
+        </div>
+
+        <div class="photo-item">
+            <img src="fxn 2026-01-30 130242D98A17E25B99.JPG" alt="Gastronomy">
+            <div class="photo-caption">Future ITM BTech FC contenders, circa 2026 </div>
+        </div>
+        <div class="photo-item">
+    <img src="fxn 2026-02-19 124703CBFE9DC7C75B.JPG" alt="Description">
+    <div class="photo-caption">Shivjaynti Palki, circa 2026</div>
+</div>
+<div class="photo-item">
+    <img src="2EF2B91E-46F8-4189-A32E-346C51745CDA_1_105_c.jpeg" alt="Description">
+    <div class="photo-caption">Website Clone source code, circa 2026</div>
+</div>
+<div class="photo-item">
+    <img src="6B3BD173-4C01-4976-9F67-6C5477CC78B1_1_105_c.jpeg" alt="Description">
+    <div class="photo-caption">RnD Workshop Attendee, circa 2026</div>
+</div>
+<div class="photo-item">
+    <img src="9EC1F2A0-9928-471A-996D-3EB331AB6655_1_105_c.jpeg" alt="Description">
+    <div class="photo-caption">Bajrang dal Intern, circa 2026</div>
+</div>
+<div class="photo-item">
+    <img src="E361B559-FEFC-482C-AE1C-92AD9B958636_1_105_c.jpeg" alt="Description">
+    <div class="photo-caption">Saddest ITM Student, circa 2026</div>
+</div>
+<div class="photo-item">
+    <img src="C21177F1-6C83-4C94-AEC3-7C4DE3DBEC53_1_105_c.jpeg" alt="Description">
+    <div class="photo-caption">Makar Sankranti Winners, circa 2026</div>
+</div>
+<div class="photo-item">
+    <img src="214C2467-F261-49CB-80B4-0A6790A266B2_1_105_c.jpeg" alt="Description">
+    <div class="photo-caption">Love is in the Train, circa 2026</div>
+</div>
+        </main>
+
+    <footer>
+        &copy; 2026 Photography Portfolio. Shot on Kodak Gold 400.
+    </footer>
+
+</body>
+</html>
